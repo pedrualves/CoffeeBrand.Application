@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Referências a outros projetos do mesmo Solution -->
+    <ProjectReference Include="..\CoffeeBrand.Domain\CoffeeBrand.Domain.csproj" />
+    <ProjectReference Include="..\CoffeeBrand.Infrastructure\CoffeeBrand.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+  
+</Project>
