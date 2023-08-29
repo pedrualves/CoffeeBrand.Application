@@ -1,6 +1,8 @@
+using Domain.Entities;
+using Domain.Service;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Controllers;
+namespace API;
 
 [ApiController]
 [Route("[controller]")]
@@ -13,7 +15,7 @@ public class CoffeeBrandController : ControllerBase
         _coffeeBrandService = coffeeBrandService;
     }
 
-    [HttpGet("GetHex")]
+    [HttpGet("GetMultiHex")]
     public IEnumerable<CoffeeBrandModel> Get()
     {
         return _coffeeBrandService.GetCoffeeBrands();

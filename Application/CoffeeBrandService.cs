@@ -1,6 +1,8 @@
-using CoffeeBrand.Infrastructure.Repositories;
+using Domain.Entities;
+using Domain.Service;
+using Infrastructure.Repository;
 
-namespace CoffeeBrand.Application
+namespace Application
 {
     public class CoffeeBrandService : ICoffeeBrandService
     {
