@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddScoped<ICoffeeBrandService, CoffeeBrandService>();
-builder.Services.AddScoped<InMemoryCoffeeBrandRepository>();
+builder.Services.AddScoped<ICoffeeBrandRepository, InMemoryCoffeeBrandRepository>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
